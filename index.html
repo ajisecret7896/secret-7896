@@ -8,6 +8,26 @@
     scroll-behavior: smooth;
 }
 
+     /* Gaya untuk bar navigasi */
+      .dropdown {
+    position: sticky;
+    top: 10px;
+    z-index: 1000;
+    text-align: center;
+}
+
+select {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 2px solid #e60023;
+    background: white;
+    font-weight: bold;
+    color: #e60023;
+    outline: none;
+}
+
+
+
         /* Cara tulis CSS yang benar: sebutkan targetnya dulu (body) */
         body {
     background-color: #fffafa; /* Warna putih kemerahan sangat muda */
@@ -70,15 +90,46 @@ h1 {
     transform: scale(0.95);
 }
 
+    footer {
+    background: linear-gradient(to right, #333, #555);
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 50px;
+    border-radius: 20px 20px 0 0;
+    font-size: 13px;
+}
+
+footer a {
+    color: #ff4d6d !important;
+    text-decoration: underline;
+}
+
+.copyright {
+    opacity: 0.8;
+    margin-top: 5px;
+}
+
 
     </style>
 </head>
 
 <body>
+    
+   <div class="dropdown">
+    <select onchange="location = this.value;">
+        <option value="#">--- Pilih Drakor ---</option>
+        <option value="#seoul">1. Seoul Busters</option>
+        <option value="#dots">2. DOTS</option>
+        <option value="kontak">shere</option>
+        </select>
+</div>
+
+
     <h1>DRAKOR WAJIB TONTON SEKALI SEUMUR HIDUP</h1>
     <hr>
     
-    <h2>1. Seoul Busters</h2>
+    <h2 id="seoul">1. Seoul Busters</h2>
     <hr>
     <img src="seoul-buster.jpg" alt="Seoul Busters">
     
@@ -97,8 +148,24 @@ h1 {
          </ul>
     
     
-    <h3>Ending:</h3>
-    <p>Episode akhir dari drakor Seoul Busters tidak meninggalkan kasus yang menggantung, alias happy ending. Seluruh tim dan pimpinan mereka, Dongbang Yoo Bin juga kembali menjadi satu tim setelah sempat terpisah selama satu tahun.</p>
+    <h3>pemeran:</h3>
+    <ul>
+        <li>
+            <b>kim dong-wook</b>
+        </li>
+        <li>
+            <b>park ji-hwan</b>
+        </li>
+        <li>
+            <b>seo hyun-woo</b>
+        </li>
+        <li>
+            <b>park se-wan</b>
+        </li>
+        <li>
+            <b>lee seung-woo</b>
+        </li>
+    </ul>
     
     
      <video controls poster="seoul-buster.jpg">
@@ -113,21 +180,40 @@ h1 {
   
     <!-- batas -->
     
-    <h2>2.descendants of the sun</h2>
+    <h2 id="dots">2.Descendants of the sun (DOTS)</h2>
     <hr>
     <img src="dots.jpg" alt:"descendants of the sun">
     <a href="https://s.shopee.co.id/9UxeNs9rIQ">lihat gambar</a>
     
-   <br> <h3><strong>Sinopsis:</strong></h3>
+    <h4>
+        <b>
+            Drakor romance pertama yang buat mimin jadi ketagihan film film korea
+        </b>
+    </h4>
+    
+    <h3><strong>Sinopsis:</strong></h3>
     <p>Descendants of the Sun (2016) adalah drama Korea populer yang mengisahkan romansa antara Kapten Yoo Si-jin (Song Joong-ki), tentara pasukan khusus, dan Dokter Kang Mo-yeon (Song Hye-kyo). Bertempat di zona konflik Urk, mereka menghadapi dilema hidup-mati, perbedaan prinsip profesi, serta tantangan cinta di tengah bahaya dan misi kemanusiaan</p>
     
    <p><ul><li>episode:16</li>
    <li>genre:drama,romantis</li>
    <li>Tempat nonton:Netflix,IQIYI,vidio</li></ul></p>
    
-    <h3><strong>Ending:</strong></h3>
+    <h3><strong>Pemeran:</strong></h3>
     
-    <p>happy ending pkoknya,gas nonton</p>
+    <ul>
+        <li>
+            <b>song joong-ki</b>(kapten yoo si-sijin)
+        </li>
+        <li>
+           <b> song hye-kyo</b>(dokter kang mo-yeon)
+        </li>
+        <li>
+            <b>jin goo</b> (sersan mayor seo dae-young)
+        </li>
+        <li>
+           <b> kim ji-won</b> (letnan yoon myung-ju)
+        </li>
+    </ul>
     
     <video controls poster="dots.jpg">
         <source src="dots.mp4" type="video/mp4">
@@ -141,7 +227,24 @@ h1 {
     
     
     
-    <div style="margin-top: 30px; text-align: center;">
+    <footer>
+    <p>Terima kasih sudah membaca review drakor di blog ini!.akan selalu ada update,so follow me,untuk memberi dukungan mu</p>
+    <div class="copyright">
+        &copy; 2026 <b>ajisecret7896</b>. All Rights Reserved.
+    </div>
+    <p>
+        Follow me on: 
+        <a href="https://ajisecret7896.github.io/blog-7896/">My Profile</a>
+    </p>
+</footer>
+
+    
+    
+    
+    
+    <div 
+    id="kontak"
+    style="margin-top: 30px; text-align: center;">
     <p>Suka rekomendasi ini? Bagikan ke teman!</p>
     <a href="whatsapp://send?text=Cek deh rekomendasi drakor seru ini: https://s.id/lQN4d" 
        style="background-color: #25D366; color: white; padding: 10px 20px; border-radius: 50px; display: inline-block;">
